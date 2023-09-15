@@ -1,0 +1,6 @@
+val bitmap = BitmapFactory.decodeStream(url.openStream())
+             withContext(Dispatchers.Main)
+             {
+                 holder.imageProgress.visibility = View.GONE
+                 holder.imageLink.setImageBitmap(bitmap)
+             }
